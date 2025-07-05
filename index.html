@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled HTML Elements Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Elements Demo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Inline vs Block Elements</h2>
+            <p>
+                Inline elements like <span>span</span> are placed within a line of text.
+            </p>
+            <p>
+                Block elements like
+            <div>div</div> take up a whole line and
+            separate <p>paragraph</p> elements.
+            </p>
+        </section>
+
+        <section>
+            <h2>Text Elements</h2>
+            <p>This is a <strong>paragraph</strong> with <em>emphasis</em>, <mark>highlighted</mark>, and
+                <small>small</small> text.</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
+                and close to 5 million globally.
+            </blockquote>
+            <pre>This is a                            spaced paragraph</pre>
+            <pre>
+        Code on the screen, so neat and bright,  
+        Running through loops, deep into the night.  
+        If bugs appear, don’t fear the fright,  
+        Just debug with love, and you’ll make it right.
+    </pre>
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+        </section>
+
+        <section>
+            <h2>Lists</h2>
+            <ul>
+                <li>Item One</li>
+                <li>Item Two</li>
+            </ul>
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+            </ol>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Image and Link</h2>
+            <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+
+            <img src="./images/image1.png" alt="Placeholder Image" />
+        </section>
+
+        <section>
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Vipin</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Form</h2>
+            <form>
+                <!-- name: Vipin -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" /> 
+
+
+                <!-- email: 6qK5d@example.com -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+
+                <!-- gen: male -->
+                <label>Gender:</label>
+                <input type="radio" name="gen" value="male" /> Male
+                <input type="radio" name="gen" value="female" /> Female
+
+                <!-- hobbies: reading, travel -->
+                <label>Hobbies:</label>
+                <input type="checkbox" name="hobby" value="reading" /> Reading
+                <input type="checkbox" name="hobby" value="travel" /> Traveling
+
+
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                </select>
+
+
+                <textarea placeholder="Your message here..."></textarea>
+
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Media</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+
+
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Semantic Elements</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>This is an article.</p>
+            </article>
+            <aside>
+                <p>This is an aside (like a sidebar).</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer content goes here &copy; 2025</p>
+    </footer>
+
+</body>
+
+</html>
+</code>
