@@ -1,0 +1,310 @@
+JavaScript: JS is a programming language primarily used to create interactive features and dynamic content on webpages. Along with HTML and CSS JS enables website to respond to user actions, animate graphics, handle form validation, update content with reloading page and many more.
+
+JavaScript is versatile, dynamically typed, multi-paradigm, interpreted/just-in-time compiled language.
+
+
+What is JavaScript?
+JavaScript is a high-level, interpreted programming language that is primarily used to create interactive effects and dynamic content on websites. It is one of the core technologies of the web, alongside HTML and CSS.
+
+🔹 Key Features:
+Client-side Scripting: Runs in the browser (on the user's device), enabling interactive web pages.
+
+Dynamically Typed: You don’t need to specify variable types.
+
+Event-Driven: Can respond to user actions like clicks, scrolls, key presses, etc.
+
+Prototype-Based: Uses prototypes for inheritance, not classes (though ES6 added class syntax).
+
+Interpreted Language: Runs directly in browsers like Chrome, Firefox, Safari, etc.
+
+------------------------------------------------------------------------------------------------------
+
+👉 What is the difference between interpreted and compiled language?
+🔹 Compiled Language
+A compiled language is one where the source code is translated into machine code (binary) by a compiler before the program is run.
+
+✅ Key Characteristics:
+Requires a compiler to convert code to machine-readable form.
+Faster execution after compilation.
+Errors are caught during compilation.
+
+📘 Examples: C, C++, Rust, Go, JAVA.
+
+[Source Code] --(Compiler)--> [Machine Code] --> [Run]
+
+🔹 Interpreted Language
+An interpreted language is executed line by line by an interpreter, at runtime.
+
+✅ Key Characteristics:
+No separate compilation step.
+Slower than compiled code.
+Easier to test and debug.
+
+📘 Examples: JavaScript, Python, Ruby, PHP, Bash
+
+[Source Code] --(Interpreter)--> [Run Line by Line]
+
+----------------------------------------------------------------------------------------------------------
+
+🔹 JavaScript has two main categories of data types:
+
+	1.Primitive Data Types
+	2.Reference (Non-Primitive) Data Types
+
+| Category      | Data Types                                               |
+| ------------- | -------------------------------------------------------- |
+| **Primitive** | Number, String, Boolean, Null, Undefined, Symbol, BigInt |
+| **Reference** | Object, Array, Function, Date, RegExp, etc.              |
+
+
+✅ 1. Primitive Data Types: Primitive values are immutable (cannot be changed) and are stored directly in the variable.
+
+| Type      | Description                        | Example                       |
+| --------- | ---------------------------------- | ----------------------------- |
+| Number    | Numeric values                     | `10`, `3.14`, `-5`            |
+| String    | Text values enclosed in quotes     | `'hello'`, `"world"`          |
+| Boolean   | Logical value                      | `true`, `false`               |
+| Undefined | Declared variable with no value    | `let x;` → `x` is `undefined` |
+| Null      | Intentional absence of value       | `let x = null;`               |
+| BigInt    | Large integers beyond normal range | `12345678901234567890n`       |
+| Symbol    | Unique and immutable identifier    | `Symbol("id")`                |
+
+Ex:
+🔸 Number
+let age = 25;
+let price = 99.99;
+let result = -45;
+
+🔸 String: Strings can be created using 'single', "double", or `backtick` (template literals).
+let name = "John";
+let greeting = 'Hello';
+let message = `Welcome ${name}`;	
+
+🔸 Boolean: Used for conditional logic.
+let isLoggedIn = true;
+let hasAccess = false;
+
+🔸 Undefined: A variable declared but not assigned any value is undefined.
+let a;
+console.log(a); // undefined
+
+🔸 Null: Manually assigned to represent “no value”.
+let person = null;
+
+🔸 BigInt: Used to represent large integers.
+let bigNum = 123456789012345678901234567890n;
+
+🔸 Symbol:Each Symbol is unique even with the same description.
+let sym1 = Symbol("unique");
+let sym2 = Symbol("unique");
+console.log(sym1 === sym2); // false
+
+
+✅ 2. Reference (Non-Primitive) Data Types: Reference types store memory addresses of objects, not the actual value.
+
+| Type     | Description               | Example             |
+| -------- | ------------------------- | ------------------- |
+| Object   | Key-value pairs           |  { name: "Alice" }  |
+| Array    | Ordered list of items     |  [1, 2, 3]          |
+| Function | Reusable block of code    |  function() {}      |
+| Date     | Built-in object for dates |  new Date()         |
+| RegExp   | Regular expressions       |  /\d+/              |
+
+
+🔹 What are Operators?
+In JavaScript, operators are special symbols or keywords used to perform operations on operands (values and variables).
+They help you manipulate data, compare values, assign variables, perform arithmetic, and more.
+
+📌 Example:
+let sum = 5 + 3;
+Here, + is the operator, and 5 & 3 are the operands.
+
+✅ List of All JavaScript Operators
+🔸 1. Arithmetic Operators: Used for performing mathematical operations.
+
+| Operator | Description         | Example                | Result |
+| -------- | ------------------- | ---------------------- | ------ |
+| `+`      | Addition            | `5 + 3`                | `8`    |
+| `-`      | Subtraction         | `5 - 3`                | `2`    |
+| `*`      | Multiplication      | `5 * 3`                | `15`   |
+| `/`      | Division            | `10 / 2`               | `5`    |
+| `%`      | Modulus (Remainder) | `10 % 3`               | `1`    |
+| `**`     | Exponentiation      | `2 ** 3`               | `8`    |
+| `++`     | Increment           | `let x = 1; x++` → `2` |        |
+| `--`     | Decrement           | `let x = 2; x--` → `1` |        |
+
+🔸 2. Assignment Operators: Used to assign values to variables and update them.
+
+| Operator | Description         | Example   | Equivalent   |
+| -------- | ------------------- | --------- | ------------ |
+| `=`      | Assign              | `x = 10`  | —            |
+| `+=`     | Add and assign      | `x += 5`  | `x = x + 5`  |
+| `-=`     | Subtract and assign | `x -= 2`  | `x = x - 2`  |
+| `*=`     | Multiply and assign | `x *= 3`  | `x = x * 3`  |
+| `/=`     | Divide and assign   | `x /= 2`  | `x = x / 2`  |
+| `%=`     | Modulus and assign  | `x %= 2`  | `x = x % 2`  |
+| `**=`    | Exponent and assign | `x **= 2` | `x = x ** 2` |
+
+🔸 3. Comparison Operators: Used to compare two values, returning true or false.
+
+| Operator | Description        | Example     | Result  |
+| -------- | ------------------ | ----------- | ------- |
+| `==`     | Equal (loose)      | `5 == "5"`  | `true`  |
+| `===`    | Equal (strict)     | `5 === "5"` | `false` |
+| `!=`     | Not equal (loose)  | `5 != "5"`  | `false` |
+| `!==`    | Not equal (strict) | `5 !== "5"` | `true`  |
+| `>`      | Greater than       | `5 > 3`     | `true`  |
+| `<`      | Less than          | `3 < 5`     | `true`  |
+| `>=`     | Greater or equal   | `5 >= 5`    | `true`  |
+| `<=`     | Less or equal      | `5 <= 4`    | `false` |
+
+🔸 4. Logical Operators: Used to combine multiple conditions.
+&& AND
+|| OR
+! NOT
+
+🔸 5. Bitwise Operators: Operate on binary representations of numbers.
+
+🔸 6. String Operator: Only one: + is used to concatenate strings.
+
+let fullName = "John" + " " + "Doe"; // "John Doe"
+
+
+🔸 7. Conditional (Ternary) Operator: Short-hand for if...else.
+condition ? expr1 : expr2
+
+let age = 18;
+let message = (age >= 18) ? "Adult" : "Minor";
+
+
+🔸 8. Type Operators: Used to find type or constructor of a value.
+
+| Operator     | Description                            |
+| ------------ | -------------------------------------- |
+| `typeof`     | Returns type of a variable             |
+| `instanceof` | Checks if an object belongs to a class |
+
+🔸 9. Spread and Rest Operator
+Spread: Expands arrays/objects.
+Rest: Gathers remaining values.
+
+---------------------------------------------------------------------------------------------------------------
+
+📘 let vs const vs var in JavaScript are used to declare variables.
+
+🔹 1. var – Function-scoped
+Introduced in early JavaScript.
+Can be redeclared and updated.
+Function scoped, not block scoped.
+Can lead to bugs due to hoisting behavior.
+
+var name = "Alice";
+var name = "Bob";      // ✅ Redeclaration allowed
+name = "Charlie";      // ✅ Update allowed
+console.log(name);     // "Charlie"
+
+
+🔹 2. let – Block-scoped
+Introduced in ES6.
+Cannot be redeclared in the same scope.
+Can be updated.
+Block-scoped: visible only within {}.
+No hoisting issues like var.
+
+
+let age = 25;
+// let age = 30;       ❌ Error: Identifier 'age' has already been declared
+age = 30;              // ✅ Update allowed
+console.log(age);      // 30
+
+
+🔹 3. const – Block-scoped constant
+Introduced in ES6.
+Cannot be redeclared or updated.
+Must be initialized at declaration.
+Also block-scoped like let.
+
+
+const PI = 3.14;
+// PI = 3.1415;     ❌ Error: Assignment to constant variable
+console.log(PI);    // ✅ 3.14
+
+| Feature           | `var`                            | `let`                                   | `const`       |
+| ----------------- | -------------------------------- | --------------------------------------- | ------------- |
+| Scope             | Function                         | Block                                   | Block         |
+| Hoisting          | Yes (initialized as `undefined`) | Yes (but not usable before declaration) | Yes (same)    |
+| Redeclaration     | ✅ Allowed                        | ❌ Not allowed                           | ❌ Not allowed |
+| Reassignment      | ✅ Allowed                        | ✅ Allowed                               | ❌ Not allowed |
+| Must Initialize?  | ❌ No                             | ❌ No                                    | ✅ Yes         |
+| Use in modern JS? | ❌ Avoid                          | ✅ Recommended                           | ✅ Recommended |
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
