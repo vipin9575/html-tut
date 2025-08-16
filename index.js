@@ -14,6 +14,7 @@ let name = "B";
 console.log("The name is: " + name);
 
 console.log("-------------------------------------------------------");
+console.log("-------------------"+window.apple); // "red" ← from index.html script tag
 
 // Number
 console.log(typeof 42);                  // "number"
